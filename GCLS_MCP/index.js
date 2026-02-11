@@ -254,7 +254,7 @@ app.post("/api/v1/mcp/process_message", async (req, res) => {
 /* --------------------------------------------------
    START SERVER
 -------------------------------------------------- */
-app.listen(PORT, () => {
-  console.log(`✅ MCP Server running at http://localhost:${PORT}`);
-  console.log(`🔐 One-time auth at http://localhost:${PORT}/auth`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`✅ MCP Server running on port ${PORT}`);
 });
+
